@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 100%;
+  height: 1080px;
+  background: #2c2c2c;
+}
+
+article {
+  width: 1440px;
+  height: auto;
+  margin: auto;
+}
+article .box {
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  position: relative;
+}
+article .box-1 {
+  width: 250px;
+  height: 250px;
+}
+article .box-1 button {
+  width: 120px;
+  height: 55px;
+  top: 10px;
+  background: #fff9;
+  border: 1px solid #fff;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+article .box-1 .button {
+  text-transform: uppercase;
+}
+article .box-1 .button:before {
+  -webkit-transition: all 0.6s cubic-bezier(0.7, -0.5, 0.2, 2);
+  transition: all 0.6s cubic-bezier(0.7, -0.5, 0.2, 2);
+  content: "";
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+article .box-1 .button span {
+  mix-blend-mode: darken;
+}
+article .box-1 .button:hover:before {
+  background: #fff;
+  width: 100%;
+}
+article .box-1 .img-1 {
+  width: 100%;
+  height: 250px;
+  background: url(../image/圖一.jpg) no-repeat;
+  background-size: cover;
+}
+article .box-1:hover .img-1, article .box-1:active .img-1, article .box-1 .active .img-1 {
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+}
+article .box-1:hover button, article .box-1:active button, article .box-1 .active button {
+  -webkit-animation: slide 0.6s linear forwards;
+          animation: slide 0.6s linear forwards;
+  opacity: 1;
+}
+@-webkit-keyframes slide {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+@keyframes slide {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+article .box-2 {
+  width: 250px;
+  height: 250px;
+}
+article .box-2 button {
+  width: 120px;
+  height: 55px;
+  top: 75px;
+  background: #fff9;
+  border: 1px solid #fff;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  pointer-events: none;
+  z-index: 20;
+}
+article .box-2 button.display {
+  top: 100px;
+  opacity: 1;
+  background: #fff;
+}
+article .box-2 .img-2 {
+  width: 250px;
+  height: 250px;
+  background: url(../image/圖一.jpg) no-repeat;
+  background-size: cover;
+}
+article .box-2 .img-2:hover, article .box-2 .img-2:active, article .box-2 .img-2.active {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-animation: jump 0.4s;
+          animation: jump 0.4s;
+}
+@-webkit-keyframes jump {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  33% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  66% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+}
+@keyframes jump {
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  33% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  66% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+}
+article .box-3 {
+  width: 250px;
+  height: 250px;
+}
+article .box-3 button {
+  width: 120px;
+  height: 55px;
+  top: 75px;
+  background: #fff9;
+  border: 1px solid #fff;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  pointer-events: none;
+  z-index: 20;
+}
+article .box-3 .img-3 {
+  width: 250px;
+  height: 250px;
+  background: url(../image/圖一.jpg) no-repeat;
+  background-size: cover;
+}
+article .box-3:hover .img-3, article .box-3:active .img-3, article .box-3 .active .img-3 {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}

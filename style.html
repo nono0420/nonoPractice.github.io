@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <article>
+        <div class=" box box-1">
+            <button class="button"><span>點我</span></button>
+            <div class="img-1"></div>
+        </div>
+
+        <div class="box box-2">
+            <button>點我</button>
+            <div class="img-2"></div>
+        </div>
+
+        <div class="box box-3">
+            <button>點我
+                <div></div>
+            </button>
+            <div class="img-3"></div>
+        </div>
+    </article>
+
+    <script>
+        //按鈕滑動效果2
+        $(function(){
+            $('.img-2').hover(function(){
+                $(this).prev('button').toggleClass('display');
+            })
+        })
+
+   </script>
+</body>
+</html>
